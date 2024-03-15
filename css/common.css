@@ -1,0 +1,306 @@
+@charset "utf-8";
+
+ *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: 'NotoS_R','Malgun Gothic','Dotum','tahoma','sans-serif';
+}
+
+
+:root {
+    /* color */
+    --col-white :#fff;
+    --col-tit : #394370;
+    --col-value : #181C32;
+    --col-check : #536DFE;
+
+    --col-red : #DB2828;
+    --col-orange : #FF7700;
+    --col-yellow: #F3C019
+    --col-green: #00B566;
+
+    --btn-line:#D9D9E4;
+
+    --tbl-th: val(--col-tit);
+    --tbl-td :#949598;
+
+    --gray-20 : #F2F2F2;
+    --gray-50 : #B5B5B5;
+    --gray-80 : #F8F8F8;
+
+
+    --blue-30 : #3267D1;
+    --blue-40 : #4B7EE3;
+    --blue-90 : #9A9AA7;
+ 
+
+    /* font-size */
+
+    /* height */
+    --size-sm : 36px;
+    --size-md : 40px;
+    --size-lg : 45px;
+
+}
+
+
+/* color */
+
+/* ===== 스크롤바 ===== */
+.scroll::-webkit-scrollbar{width:8px;}
+.scroll::-webkit-scrollbar-thumb{background-color:#bdbdbd;border-radius:5px;}
+.scroll::-webkit-scrollbar-track{background-color:transparent;border-radius:5px;}
+
+
+
+/* ===== 숨김영역 =====*/
+.skip{position:absolute;width:0;height:0;line-height:0;overflow:hidden;text-indent:-2000px;left:-500px;}
+
+.clear::after{content:'';display:block;clear:both;}
+.blind{position:absolute;clip:rect(0,0,0,0);width:1px;height:1px;margin:-1px;overflow:hidden;}
+
+/* ===== display ===== */
+.d-block{display:block !important}
+.d-inblock{display:inline-block !important}
+.d-flex{display:-webkit-box;display:-ms-flexbox;display:flex !important;}
+.d-none{display: none !important;}
+
+/* ===== overflow ===== */
+.ofh{overflow:hidden !important}
+
+
+/* ===== width ===== */
+
+
+/* ===== height ===== */
+
+/* ===== margin ===== */
+.m0{margin:0px !important}
+.mt10{margin-top:10px !important}
+.mt12{margin-top:12px !important}
+.mt30{margin-top:30px !important}
+
+
+.mb20{margin-bottom:20px !important;}
+
+.mr0{margin-right:0px !important}
+
+.ml2{margin-left:2px !important;}
+
+/* ===== padding ===== */
+.p0{padding:0 !important}
+.pt0{padding-top:0px !important}
+
+.pb0{padding-bottom:0px !important}
+
+.pr0{padding-right:0px !important}
+
+.pl0{padding-left:0px !important}
+
+/* ===== text-align ===== */
+.text_l{text-align:left !important}
+.text_r{text-align:right !important}
+.text_c{text-align:center !important}
+
+
+/* ===== border ===== */
+.bnone{border: none !important;}
+.bl0{border-left:0px !important}
+.br0{border-right:0px !important}
+.bt0{border-top:0px !important}
+.bb0{border-bottom:0px !important}
+
+
+/* ===== color ===== */
+.col-gray {
+    color: var(--gray-50) !important;
+}
+
+
+/* ===== forms ===== */
+
+input,select,textarea {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: 'NotoS_R';
+    color: var(--col-value);
+}
+
+input:-ms-clear {display:none}
+input:-webkit-input-placeholde{color:var(--gray-50)}
+input:-moz-placeholder {color:var(--gray-50)}
+input:-ms-input-placeholder {color:var(--gray-50)}
+input::placeholder{color:var(--gray-50);}
+
+textarea::-webkit-input-placeholder{color:var(--gray-50)}
+textarea::-moz-placeholder{color:var(--gray-50)}
+textarea:-ms-input-placeholder{color:var(--gray-50)}
+textarea:disabled{color:var(--gray-50)}
+
+
+.ip-txt{
+    width: 100%;
+    height: var( --size-md);
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+
+.ip-txt.ip-size__big{
+   max-width: 375px;
+   height: var(--size-lg);
+   padding: 12px 20px;
+   border: 1px solid #D2D2D2;
+   border-radius: 6px;
+   font-size: 15px;
+}
+
+/* *** radio, checkbox *** */
+.ip-checkbox, .ip-radio{
+    display: flex
+}
+
+.ip-checkbox .check-module,
+.ip-radio .radio-module{
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.ip-checkbox .check-module input[type=checkbox]~.checkbox {
+    flex: 0 auto;
+    width: 20px;
+    height: 20px;
+    background: url(../images/check-default.svg) no-repeat;
+}
+
+.ip-checkbox .check-module input[type=checkbox]:checked~.checkbox {
+    background: url(../images/check-checked.svg) no-repeat;
+}
+
+.ip-checkbox .check-module.disabled input[type=checkbox]:checked~.checkbox {
+    background: url(../images/check-dis.svg) no-repeat;
+}
+
+
+.ip-radio .radio-module input[type=radio]~.radio {
+    flex: 0 auto;
+    width: 20px;
+    height: 20px;
+    background: url(../images/radio-default.svg) no-repeat;
+}
+
+.ip-radio .radio-module input[type=radio]:checked~.radio {
+    background: url(../images/radio-checked.svg) no-repeat;
+}
+
+.ip-radio .radio-module.disabled input[type=radio]:checked~.radio {
+    background: url(../images/radio-dis.svg) no-repeat;
+}
+
+.ip-checkbox .check-module .label ,
+.ip-radio .radio-module .label
+{
+    flex: 0 auto;
+    margin-left: 5px;
+    line-height: 20px;
+    font-size: 15px;
+    color: var(--col-value)
+}
+
+/* ===== buttons ===== */
+.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 23px;
+    background-color: var(--blue-30);
+    font-size: 15px;
+    text-align: center;   
+    color: var(--col-white);
+    letter-spacing: -0.3px;
+}
+
+.btn.size-sm{
+    height: var(--size-sm);
+}
+
+.btn.size-lg{
+    padding:0 41px;
+    height: var(--size-lg);
+}
+
+.btn.line{
+    background-color: var(--col-white);
+    color: var(--blue-30);
+    border: 1px solid  var(--btn-line);
+}
+
+.btn.color-red{
+    background-color: var(--col-red);
+}
+
+.btn.btn-width-lg {
+    position: relative;
+    width: 158px;   
+}
+
+.btn.icon-login-arrow:after{
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+    width: 21px;
+    height: 21px;  
+    content: '';
+    background: url(../images/icon-login_arrow.png) no-repeat right  center;
+    background-size: 21px 21px;
+}
+
+
+ .btn.icon-search:before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background: url(../images/icon-search.svg) no-repeat left center;
+    background-size: 20px 20px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== badges ===== */
+
+
+
+
+/* ===== layout ===== */
+
+
+
+
+
