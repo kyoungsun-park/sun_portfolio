@@ -101,7 +101,8 @@ b{font-weight:normal;}
 
 a {
     font: inherit;
-    color: inherit;
+    /* color: inherit; */
+     color: var(--col-white);
     text-decoration: none;
 	-webkit-tap-highlight-color:transparent; /* 모바일에서 a태그 눌렀을때나 터치시 영역 색상 변경 */
 	-webkit-tap-highlight-color:rgba(0, 0, 0, 0);

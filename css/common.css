@@ -12,6 +12,8 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-size: 100%;
+    font: inherit;
     line-height: 1.5;
     font-family: 'NotoS_R','Malgun Gothic','Dotum','tahoma','sans-serif';
 }
@@ -23,15 +25,22 @@ body {
     Primary, Secondary, Tertiary (주, 두번째, 세번째), error
     on-primary 선택됐을때 ,primary-con 주색상 컨테이너, primary-variant 변형, acctnt 강조(
     */
-    /* --col-primary: var(--col-value); 
-    --col-primary-varinat: var(-- col);
-    --col-accent: var();
-    --col-accent-: var() */
+
+    --col-primary: var(--col-black); 
+    --col-primary-variant: var(--col-gray);
+    --col-accent: var(--col-blue);
+    --col-accent-variant: var(--col-orange);
+    --col-text: var(--col-white); 
 
 
 
     /* color */
     --col-white :#fff;
+    --col-black : #050a13;
+    --col-blue: #03e8f9;
+    --col-orange:#fd6413;
+
+    /* --col-gray:#1b1e26;
     --col-tit : #394370;
     --col-value : #181C32;
     --col-check : #536DFE;
@@ -48,12 +57,12 @@ body {
 
     --gray-20 : #F2F2F2;
     --gray-50 : #B5B5B5;
-    --gray-80 : #F8F8F8;
+    --gray-80 : #F8F8F8; 
 
 
     --blue-30 : #3267D1;
     --blue-40 : #4B7EE3;
-    --blue-90 : #9A9AA7;
+    --blue-90 : #9A9AA7;*/
  
 
     /* font-size */
