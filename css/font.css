@@ -6,30 +6,30 @@
     font-family: 'NotoS_R';
 	font-style: normal;
     font-weight: 400;
-	src:  url('../font/NotoSansKR-Regular.woff2') format('woff2'),
-		   url('../font/NotoSansKR-Regular.woff') format('woff');	
+	src:  url('../fonts/NotoSansKR-Regular.woff2') format('woff2'),
+		   url('../fonts/NotoSansKR-Regular.woff') format('woff');	
 }
 
 @font-face{
     font-family: 'NotoS_M';
 	font-style: normal;
     font-weight: 500;
-	src:  url('../font/NotoSansKR-Medium.woff2') format('woff2'),
-		   url('../font/NotoSansKR-Medium.woff') format('woff');	 
+	src:  url('../fonts/NotoSansKR-Medium.woff2') format('woff2'),
+		   url('../fonts/NotoSansKR-Medium.woff') format('woff');	 
 }
 
 @font-face{
     font-family: 'NotoS_B';
 	font-style: normal;
     font-weight: 700;
-	src:  url('../font/NotoSansKR-Bold.woff2') format('woff2'),
-		  url('../font/NotoSansKR-Bold.woff') format('woff');	 
+	src:  url('../fonts/NotoSansKR-Bold.woff2') format('woff2'),
+		  url('../fonts/NotoSansKR-Bold.woff') format('woff');	 
 }
 
 /* ===== Poppins 영문폰트  ==== */
 
 @font-face {
-	src: url('../font/Poppins-Regular.ttf') format("truetype");
+	src: url('../fonts/Poppins-Regular.ttf') format("truetype");
 	font-family: "Poppins_R";
 	font-style: normal;
 	font-weight: 400;
@@ -37,7 +37,7 @@
 }
 
 @font-face {
-	src: url('../font/Poppins-Medium.ttf') format("truetype");
+	src: url('../fonts/Poppins-Medium.ttf') format("truetype");
 	font-family: "Poppins_M";
 	font-style: normal;
 	font-weight: 500;
@@ -45,7 +45,7 @@
 }
 
 @font-face {
-	src: url('../font/Poppins-Bold.ttf') format("truetype");
+	src: url('../fonts/Poppins-Bold.ttf') format("truetype");
 	font-family: "Poppins_B";
 	font-style: normal;
 	font-weight: 700;

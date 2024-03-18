@@ -18,6 +18,18 @@ body {
 
 
 :root {
+    /* App color */
+    /* 
+    Primary, Secondary, Tertiary (주, 두번째, 세번째), error
+    on-primary 선택됐을때 ,primary-con 주색상 컨테이너, primary-variant 변형, acctnt 강조(
+    */
+    /* --col-primary: var(--col-value); 
+    --col-primary-varinat: var(-- col);
+    --col-accent: var();
+    --col-accent-: var() */
+
+
+
     /* color */
     --col-white :#fff;
     --col-tit : #394370;
