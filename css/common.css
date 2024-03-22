@@ -39,6 +39,10 @@ body {
     --col-black : #050a13;
     --col-blue: #03e8f9;
     --col-orange:#fd6413;
+    --col-gray: #1B1E27;
+
+    /* width */
+    --max-width: 1200px;
 
     /* --col-gray:#1b1e26;
     --col-tit : #394370;
